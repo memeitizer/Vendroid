@@ -1,9 +1,9 @@
-package com.nin0dev.vendroid
+package com.memeitizer.memecord
 
 import android.util.Log
 
 object Logger {
-    private const val TAG = "Vencord"
+    private const val TAG = "MemeCord"
     @JvmStatic
     fun e(message: String?) {
         Log.e(TAG, message!!)
