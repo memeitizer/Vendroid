@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.nin0dev.vendroid'
+    namespace 'com.memeitizer.memecord'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.nin0dev.vendroid"
+        applicationId "com.memeitizer.memecord"
         minSdk 25
         targetSdk 34
         versionCode 10
