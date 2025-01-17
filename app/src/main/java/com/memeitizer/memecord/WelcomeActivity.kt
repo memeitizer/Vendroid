@@ -1,4 +1,4 @@
-package com.nin0dev.vendroid
+package com.memeitizer.memecord
 
 import android.content.Context
 import android.content.Intent
