@@ -1,4 +1,4 @@
-package com.nin0dev.vendroid
+package com.memeitizer.memecord
 
 import android.annotation.SuppressLint
 import android.app.Activity
@@ -22,8 +22,8 @@ import com.android.volley.toolbox.Volley
 import com.google.android.material.color.DynamicColors
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.gson.Gson
-import com.nin0dev.vendroid.HttpClient.fetchVencord
-import com.nin0dev.vendroid.Logger.e
+import com.memeitizer.memecord.HttpClient.fetchVencord
+import com.memeitizer.memecord.Logger.e
 import pl.droidsonroids.gif.GifImageView
 import java.io.IOException
 
@@ -111,7 +111,7 @@ class MainActivity : Activity() {
             }
         }
         else {
-            Toast.makeText(this, "Safe mode enabled, Vencord won't be loaded", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Safe mode enabled, MemeCord won't be loaded", Toast.LENGTH_SHORT).show()
             editor.putBoolean("safeMode", false)
             editor.apply()
         }
