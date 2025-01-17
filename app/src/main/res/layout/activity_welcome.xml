@@ -87,7 +87,7 @@
             android:layout_height="?attr/actionBarSize"
             android:elevation="0dp"
             app:layout_collapseMode="pin"
-            app:title="Welcome to Vendroid"
+            app:title="Welcome to MemeCord"
             app:titleTextColor="@color/text" />
 
     </com.google.android.material.appbar.AppBarLayout>
@@ -99,8 +99,8 @@
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:contentDescription="Start Vendroid"
-        android:text="Start Vendroid"
+        android:contentDescription="Start MemeCord"
+        android:text="Start MemeCord"
         app:icon="@drawable/baseline_check_24" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
