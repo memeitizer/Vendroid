@@ -1,4 +1,4 @@
-package com.nin0dev.vendroid
+package com.memeitizer.memecord
 
 import android.content.ActivityNotFoundException
 import android.net.Uri
@@ -7,10 +7,10 @@ import android.webkit.ConsoleMessage.MessageLevel
 import android.webkit.ValueCallback
 import android.webkit.WebChromeClient
 import android.webkit.WebView
-import com.nin0dev.vendroid.Logger.d
-import com.nin0dev.vendroid.Logger.e
-import com.nin0dev.vendroid.Logger.i
-import com.nin0dev.vendroid.Logger.w
+import com.memeitizer.memecord.Logger.d
+import com.memeitizer.memecord.Logger.e
+import com.memeitizer.memecord.Logger.i
+import com.memeitizer.memecord.Logger.w
 import java.util.Locale
 
 class VChromeClient(private val activity: MainActivity) : WebChromeClient() {
