@@ -1,4 +1,4 @@
-package com.nin0dev.vendroid
+package com.memeitizer.memecord
 
 import android.annotation.SuppressLint
 import android.content.ComponentName
@@ -38,61 +38,61 @@ class SettingsActivity : AppCompatActivity() {
 
         findViewById<MaterialButton>(R.id.change_icon_to_main).setOnClickListener {
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.MainMainActivity"
+                "com.memeitizer.memecord.MainMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.JollyMainActivity"
+                "com.memeitizer.memecord.JollyMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.DiscordMainActivity"
+                "com.memeitizer.memecord.DiscordMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.RetroMainActivity"
+                "com.memeitizer.memecord.RetroMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             Toast.makeText(this, "App icon changed!", Toast.LENGTH_SHORT).show()
         }
         findViewById<MaterialButton>(R.id.change_icon_to_christmas).setOnClickListener {
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.MainMainActivity"
+                "com.memeitizer.memecord.MainMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.JollyMainActivity"
+                "com.memeitizer.memecord.JollyMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.DiscordMainActivity"
+                "com.memeitizer.memecord.DiscordMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.RetroMainActivity"
+                "com.memeitizer.memecord.RetroMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             Toast.makeText(this, "App icon changed!", Toast.LENGTH_SHORT).show()
         }
         findViewById<MaterialButton>(R.id.change_icon_to_retro).setOnClickListener {
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.MainMainActivity"
+                "com.memeitizer.memecord.MainMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.JollyMainActivity"
+                "com.memeitizer.memecord.JollyMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.DiscordMainActivity"
+                "com.memeitizer.memecord.DiscordMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.RetroMainActivity"
+                "com.memeitizer.memecord.RetroMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
             Toast.makeText(this, "App icon changed!", Toast.LENGTH_SHORT).show()
         }
         findViewById<MaterialButton>(R.id.change_icon_to_discord).setOnClickListener {
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.MainMainActivity"
+                "com.memeitizer.memecord.MainMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.JollyMainActivity"
+                "com.memeitizer.memecord.JollyMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.DiscordMainActivity"
+                "com.memeitizer.memecord.DiscordMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_ENABLED, PackageManager.DONT_KILL_APP)
             packageManager.setComponentEnabledSetting(ComponentName(applicationContext,
-                "com.nin0dev.vendroid.RetroMainActivity"
+                "com.memeitizer.memecord.RetroMainActivity"
             ), PackageManager.COMPONENT_ENABLED_STATE_DISABLED, PackageManager.DONT_KILL_APP)
             Toast.makeText(this, "App icon changed!", Toast.LENGTH_SHORT).show()
         }
@@ -121,7 +121,7 @@ class SettingsActivity : AppCompatActivity() {
             if (devbuildCheckbox.isChecked) {
                 MaterialAlertDialogBuilder(this)
                         .setTitle("Warning")
-                        .setMessage("If you set a custom location, you will be loading and injecting Vencord from a different location. This feature is meant for developers ONLY. Never edit this setting if someone else asked you to, or if you don't know what you're doing! If you do set a custom location, you will not be able to ask for support in the Vencord support channel or in this project's issues. Are you sure you want to continue?")
+                        .setMessage("If you set a custom location, you will be loading and injecting MemeCord from a different location. This feature is meant for developers ONLY. Never edit this setting if someone else asked you to, or if you don't know what you're doing! If you do set a custom location, you will not be able to ask for support in the MemeCord support channel or in this project's issues. Are you sure you want to continue?")
                         .setNegativeButton(resources.getString(R.string.no)) { _, _ ->
                             devbuildCheckbox.isChecked = false
                         }
@@ -158,7 +158,7 @@ class SettingsActivity : AppCompatActivity() {
             if (findViewById<CheckBox>(R.id.allow_custom_location).isChecked && findViewById<EditText>(R.id.custom_location).text.isNotBlank()) editor.putString("vencordLocation", findViewById<EditText>(R.id.custom_location).text.toString())
 
             editor.apply()
-            Toast.makeText(this, "Settings saved, restart Vendroid to apply them.", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Settings saved, restart MemeCord to apply them.", Toast.LENGTH_LONG).show()
             finish()
         }
     }
